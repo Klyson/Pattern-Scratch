@@ -5,5 +5,6 @@
 package gdx1;
 
 public class SongOne {
-    String[] Ars = new String [] {"TL", "BR", "TR", "TL", "BL", "TR", "BR"};
+    String[] Ars = new String [] {"TR", "TR", "TR","TR", "BL", "BL", "BL", "BL",};
+    
 }

@@ -43,7 +43,7 @@ public class Gdx1 extends InputAdapter implements ApplicationListener {
         sprite3.setPosition(0, 0);
         sprite4.setPosition((w / 2) + 50, 0);
         Gdx.input.setInputProcessor(this);
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 8; i ++) {
             System.out.println(song1.Ars[i]);
         }
     }
@@ -99,11 +99,11 @@ public class Gdx1 extends InputAdapter implements ApplicationListener {
             if (song1.Ars[j].equals("TL")) {
                 S = true;
             }
-        } else if (button == Buttons.LEFT && screenX < XMid && screenY > YMid) {
+        } else if (button == Buttons.LEFT && screenX > XMid && screenY < YMid) {
             if (song1.Ars[j].equals("TR")) {
                 S = true;
             }
-        } else if (button == Buttons.LEFT && screenX > XMid && screenY < YMid) {
+        } else if (button == Buttons.LEFT && screenX < XMid && screenY > YMid) {
             if (song1.Ars[j].equals("BL")) {
                 S = true;
             }
